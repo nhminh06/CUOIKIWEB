@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="produst.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top banner_Thu cu.svg" alt="">
+        <img src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top banner_Giao hang.svg" alt="">
+        <img src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/Top banner_Chinh hang.svg" alt="">
+    </div>
+    <header class="header">
+        <div class="menu">
+            <div class="logo">
+                <a href="http://127.0.0.1:5500/CUOIKIWEB/main.html"><img class="logo" src="img/logo.png" alt=""></a>
+            </div>
+            <div class="btn-search">
+                <button class="nut"   style="margin-left: 5px;" >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
+                      </svg>
+                Danh mục                      
+                </button>
+                <button  class="nut" style="margin-left: 5px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" />
+                      </svg>
+                Thông tin                      
+                </button>
+            </div>
+            <div class="menu-search">
+                <input type="text" placeholder="search..." class="menu_search-input">
+                <div  class="search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                      </svg>
+                      
+                </div>
+            </div>
+           <div class="dichvu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+              </svg>
+              
+            <p>Liên hệ</p>
+           </div>
+           <div class="dichvu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6" width="40px">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+              </svg>
+              
+            <p>Cửa hàng </p>
+
+           </div>
+           <div class="dichvu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+              </svg>
+              
+            <p>Giao hàng</p>
+           </div>
+           <div class="dichvu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+              
+            <p><a href="http://127.0.0.1:5500/CUOIKIWEB/ShoppingCart.html"> Giỏ hàng</a></p>
+           </div>
+           <div class="btn-search">
+            <button  class="nut" style="margin-left: 5px;" >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                  </svg>
+                                    
+            Đăng ký                    
+            </button>
+            <button  class="nut" style="margin-left: 5px;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                  </svg>
+                                   
+            Đăng nhập                      
+            </button>
+        </div>
+           
+        </div>
+
+    </header>
+    <div class="container">
+    <div class="main-produst">
+        <div class="link-produst">
+            <p><a href="http://127.0.0.1:5500/CUOIKIWEB/main.html">Home</a> > Điện Thoại.</p>
+        </div>
+        <hr>
+    <h3 style="padding: 5px; padding-bottom: 17px;">iPhone 16 Pro Max 256GB | Chính hãng VN/A</h3> 
+           
+         
+           
+       <div class="display-produst">
+        <div class="produst1">
+                <div class="produst-img">
+<div class="thongtin">
+   <img src="img/dienthoai.webp" alt="">
+    <div class="produst-thongtin"><b><p style="text-align: center; padding-bottom: 5px">Tính Năng Nỗi Bật</p></b>
+        <ul>
+            <li>Màn hình Super Retina XDR 6,9 inch lớn hơn có viền mỏng hơn, đem đến cảm giác tuyệt vời khi cầm trên tay.</li>
+            <li>Điều khiển Camera - Chỉ cần trượt ngón tay để điều chỉnh camera giúp chụp ảnh hoặc quay video đẹp hoàn hảo và siêu nhanh.</li>
+            <li>iPhone 16 Pro Max có thiết kế titan cấp 5 với lớp hoàn thiện mới, tinh tế được xử lý bề mặt vi điểm.</li>
+            <li>iPhone 16 Pro Max được cài đặt sẵn hệ điều hành iOS 18.</li>
+        </ul></div>
+</div>
+                </div>
+                <div class="item-v6">
+                    <div class="item-v6-1">
+                        <img src="img/dienthoai.webp" alt="">
+                    </div>
+                    <div class="item-v6-1">
+                        <img src="img/iphone-16-pro-max-2.webp" alt="">
+                    </div>
+                    <div class="item-v6-1">
+                        <img src="img/iphone-16-pro-max-3.webp" alt="">
+                    </div>
+                    <div class="item-v6-1">
+                        <img src="img/iphone-16-pro-max-4.webp" alt="">
+                    </div>
+                    <div class="item-v6-1">
+                        <img src="img/iphone-16-pro-max-5.webp" alt="">
+                    </div>
+                    <div class="item-v6-1">
+                        <img src="img/iphone-16-pro-max-6 (1).png" alt="">
+                    </div>
+                    <div class="item-v6-1">
+                        <img src="img/iphone-16-pro-max-10.webp" alt="">
+                    </div>
+                </div>
+                <div class="item-v7">
+                    <div class="item-v7-1">
+                        <div class="item-v5">
+                            <div   class="item-v5-1">
+                             
+                                  <p style="padding-left: 5px;color: aliceblue;">Thông Tin Sản Phẩm</p>
+                            </div>
+                            <div   class="item-v5-2">
+                                <ul>
+                                    <li>Máy mới 100%, chính hãng Apple Việt Nam.
+                                    CellphoneS hiện là đại lý bán lẻ uỷ quyền iPhone chính hãng VN/A của Apple Việt Nam.</li>
+                                    <li>iPhone 16 Pro Max sử dụng iOS 18, Cáp Sạc USB‑C (1m), Tài liệu.</li>
+                                    <li>1 ĐỔI 1 trong 30 ngày nếu có lỗi phần cứng nhà sản xuất. Bảo hành 12 tháng tại trung tâm bảo hành chính hãng Apple: CareS.vn (xem chi tiết).</li>
+                                    <li>Xem thông tin kích hoạt bảo hành các sản phẩm Apple (tại đây).</li>
+                                    <li>Giá sản phẩm đã bao gồm VAT.</li>
+                                  </ul>
+                                  
+                                  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-v7-2">
+                        <div class="item-cmt-1">
+                            <h4 style="color: rgb(19, 179, 190) ;padding: 8px;">Đánh giá sản phẩm</h4><hr>
+                            <div class="danhgia">
+                                <div class="danhgia1">
+                                    <h5>Nguyễn Văn Bình</h5>
+                                    <div class="star-display">
+                                        ★★★★★
+                                      </div>
+                                      <p style="color: rgb(148, 147, 147);font-size:10px ;">5 giờ trước</p>
+                                </div>
+                                <div class="danhgia2">
+                                    <p>Chụp ảnh cực đẹp, màu sắc chân thực, đặc biệt là camera trước rất nịnh mắt. Mỗi tội hơi tiếc là giá vẫn khá cao dù máy thực sự đáng mua.</p>
+                                </div>
+                            </div>
+                            <div class="danhgia">
+                                <div class="danhgia1">
+                                    <h5>Cao Huy Hoàng</h5>
+                                    <div class="star-display">
+                                        ★★★★★
+                                      </div>
+                                      <p style="color: rgb(148, 147, 147);font-size:10px ;">10 giờ trước</p>
+                                </div>
+                                <div class="danhgia2">
+                                    <p>Thiết kế rất đẹp và sang, máy nhẹ và dễ cầm tay. Pin đủ dùng cho cả ngày, nhưng sạc hơi chậm so với kỳ vọng. Tuy nhiên tổng thể là một chiếc flagship đáng tiền.</p>
+                                </div>
+                            </div>
+                            <div class="danhgia">
+                                <div class="danhgia1"> <h5>Trương Công Kha</h5>
+                                    <div class="star-display">
+                                        ★★★★★
+                                      </div>
+                                      <p style="color: rgb(148, 147, 147);font-size:10px ;">12 giờ trước</p></div>
+                                <div class="danhgia2"><p>
+                                    Máy tốt, chạy iOS 18 rất ổn định. Tuy nhiên nếu bạn đã dùng iPhone 15 Pro Max thì sẽ thấy không khác biệt quá nhiều. Ai từ dòng cũ lên thì sẽ thấy nâng cấp rõ rệt.
+                                </p></div>
+                            </div>
+                 
+                        </div>
+                        <a   href="">Bấm để xem thêm đánh giá</a>
+                    </div>
+                </div>
+                <div class="item-v8">
+                    <h3 style="padding-bottom: 5px;">Phụ kiện mua cùng</h3>
+                    <div class="list-produst">
+                        <div class="item">
+                            <a href="">
+                                <img src="img/iphone15prolens_pishield_silver.webp" class="item-img">
+            
+                            </a>
+                            <h3 class="item-name mb4">Mua kèm dán camera</h3>
+                            <div class="item-price mb4">
+                                <span><h4>Giảm 30%</h4></span>
+                               <button class="nut">Chọn thêm</button>
+            
+                            </div>
+                           
+            
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="img/Text_ng_n_-_2024-11-19T091535.894.webp" class="item-img">
+            
+                            </a>
+                            <h3 class="item-name mb4">Mua kèm sim giảm thêm 50K</h3>
+                            <div class="item-price mb4">
+                                <span ><h4>Giảm 50k</h4></span>
+                                <button class="nut">Chọn thêm</button>
+            
+                            </div>
+                           
+            
+                        </div>
+                        <div class="item">
+                            <a href="">
+                                <img src="img/tai-nghe-khong-day-qcy-airlybuds-lite-_1_.webp" class="item-img">
+            
+                            </a>
+                            <h3 class="item-name mb4">Mua kèm tai nghe QCY</h3>
+                            <div class="item-price mb4">
+                                <span><h4>Giảm 5%</h4></span>
+                                <button class="nut">Chọn thêm</button>
+            
+                            </div>
+                           
+            
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="produst2">
+                <div class="item-v">
+                    <button class="item-v1">
+                        <h4>1TB</h4>
+                        <span>42.990.000đ</span>
+                    </button>
+                    <button class="item-v1">
+                        <h4>512GB</h4>
+                        <span>37.490.000đ</span>
+                    </button>
+                    <button class="item-v1">
+                        <h4>256GB</h4>
+                        <span>30.990.000đ</span>
+                    </button>
+                </div>
+                <h4 style="    margin-left: 16px;margin-top: 5px;color: #7b7373;">Chọn màu để xem giá và chi nhánh có hàng</h4>
+                <div class="item-v2">
+                    <button class="item-v2-1">
+                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-sa-mac.png" alt="">
+                        <div style="display: flex; flex-direction: column; padding-left: 8px;">
+                            <h5>Vàng Sa Mạc</h5>
+                            <span style="font-size: 12px;">30.990.000đ</span>
+                        </div>
+                     
+                    </button>
+                    <button class="item-v2-1">
+                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-tu-nhien.png" alt="">
+                        <div style="display: flex; flex-direction: column; padding-left: 8px;">
+                            <h5 style="font-size: 12px;">Titan Tự Nhiên</h5>
+                            <span style="font-size: 12px;">31.090.000đ</span>
+                        </div>
+                    </button>
+                    <button class="item-v2-1">
+                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-trang.png" alt="">
+                        <div style="display: flex; flex-direction: column; padding-left: 8px;">
+                            <h5>Titan Trắng</h5>
+                            <span style="font-size: 12px;">30.990.000đ</span>
+                        </div>
+                    </button>
+                    <button class="item-v2-1">
+                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:50:50/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-16-pro-max-titan-den.png" alt="">
+                        <div style="display: flex; flex-direction: column; padding-left: 8px;">
+                            <h5>Titan Đen</h5>
+                            <span style="font-size: 12px;">30.990.000đ</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="item-v3">
+                        <button class="item-v3-1 active">
+                            <span>27.990.000đ</span>
+                            <span  class="sub"    style="font-size: 15px;">Khi thu cũ lên mới</span>
+                        </button>
+                        <button class="item-v3-1">
+                            <span>39.990.000đ</span>
+                            <span   class="sub"  style="font-size: 15px; text-decoration: line-through;">34.990.000đ</span>
+                        </button>
+
+                </div>
+                <div class="item-v4">
+                    <p>Tiết kiệm thêm đến <span style="color: red;">310.000đ</span> cho người mới</p>
+                    <a href="#">Xem giá cuối cùng của bạn</a>
+                </div>
+                <div class="item-v5">
+                    <div   class="item-v5-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                          </svg>
+                          <p style="padding-left: 5px;color: aliceblue;">Khuyến mãi</p>
+                    </div>
+                    <div   class="item-v5-2">
+                        <ul>
+                            <li>Trả góp 0% lãi suất, tối đa 12 tháng, trả trước từ 10% qua CTTC hoặc 0đ qua thẻ tín dụng</li>
+                            <li>Đặc quyền trợ giá lên đến 4 triệu khi thu cũ lên đời iPhone</li>
+                            <li>Tặng voucher 500.000đ mua Gia dụng (áp dụng 1 số sản phẩm nhất định)</li>
+                            <li>Tặng Sim / Esim Viettel 5G có 8GB data/ngày kèm TV360 4K & 30GB Mybox - miễn phí 1 tháng sử dụng (Chỉ áp dụng tại cửa hàng)</li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="nut-container">
+                    <button class="nut nut-do">
+                      <strong>MUA NGAY</strong><br>
+                      <span>(Giao nhanh từ 2 giờ hoặc nhận tại cửa hàng)</span>
+                    </button>
+                  
+                    <div class="nut-nho-container">
+                      <button class="nut nut-xanh">
+                        <strong>TRẢ GÓP 0%</strong><br>
+                        <span>Trả trước chỉ từ 3.499.000đ</span>
+                      </button>
+                      <button class="nut nut-xanh">
+                        <strong>TRẢ GÓP 0% QUA THẺ</strong><br>
+                        <span>(Không phí chuyển đổi 3 - 6 tháng)</span>
+                      </button>
+                    </div>
+                  
+                    <button class="nut nut-cam">
+                      <strong>Thu cũ lên đời</strong><br>
+                      <span>Chỉ từ 27.990.000đ</span>
+                    </button>
+                  </div>
+                  <div class="item-v5">
+                    <div   class="item-v5-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                          </svg>
+                          <p style="padding-left: 5px;color: aliceblue;">ƯU ĐÃI THÊM</p>
+                    </div>
+                    <div   class="item-v5-2">
+                        <ul>
+                            <li>Xem chính sách ưu đãi dành cho thành viên Smember</li>
+                            <li>Hoàn tiền đến 2 triệu khi mở thẻ tín dụng HSBC</li>
+                            <li>Giảm đến 1 triệu khi trả góp bằng thẻ Visa Sacombank qua MPOS</li>
+                            <li>Giảm đến 1 triệu khi thanh toán qua thẻ tín dụng Vietbank</li>
+                            <li>Mở thẻ VIB nhận E-Voucher đến 600K</li>
+                            <li>Kredivo: Giảm đến 500.000đ khi thanh toán qua Kredivo</li>
+                            <li>Liên hệ B2B để được tư vấn giá tốt nhất cho khách hàng doanh nghiệp khi mua số lượng nhiều</li>
+                          </ul>
+                          
+                    </div>
+                </div>
+                  
+        </div>
+       </div>
+    </div>
+    <h2>CÁC SẢN PHẨM KHÁC</h2>
+    <div class="list-produst">
+
+        <div class="item">
+            <a href="">
+                <img src="img/ss-s24-ultra-xam-222.webp" class="item-img">
+
+            </a>
+            <h3 class="item-name mb4">Samsung Galaxy S24 Ultra 12GB 256GB </h3>
+            <div class="item-price mb4">
+                <span>23.990.000đ</span>
+                <span>33.990.000đ</span>
+
+            </div>
+            <div class="item-cmt">
+                <span>72 đánh giá</span>
+                <div class="star-display">
+                    ★★★★★
+                  </div>
+            </div>
+
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/dien-thoai-samsung-galaxy-s25-ultra_3__3.webp" class="item-img">
+
+            </a>
+            <h3 class="item-name mb4">Samsung Galaxy S25 Ultra 12GB 256GB</h3>
+            <div class="item-price mb4">
+                <span>27.990.000đ</span>
+                <span>33.990.000đ</span>
+
+            </div>
+            <div class="item-cmt">
+                <span>72 đánh giá</span>
+                <div class="star-display">
+                    ★★★★★
+                  </div>
+            </div>
+
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/dien-thoai-samsung-galaxy-s24-fe_3__4.webp" class="item-img">
+
+            </a>
+            <h3 class="item-name mb4">Samsung Galaxy S24 FE 5G 8GB 128GB</h3>
+            <div class="item-price mb4">
+                <span>12.990.000đ</span>
+                <span>16.990.000đ</span>
+
+            </div>
+            <div class="item-cmt">
+                <span>72 đánh giá</span>
+                <div class="star-display">
+                    ★★★★★
+                  </div>
+            </div>
+
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/dien-thoai-samsung-galaxy-m55.webp" class="item-img">
+
+            </a>
+            <h3 class="item-name mb4">Samsung Galaxy M55 12GB 256GB</h3>
+            <div class="item-price mb4">
+                <span>8.590.000đ</span>
+                <span>11.190.000đ</span>
+
+            </div>
+            <div class="item-cmt">
+                <span>72 đánh giá</span>
+                <div class="star-display">
+                    ★★★★★
+                  </div>
+            </div>
+
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="img/iphone13.webp" class="item-img">
+
+            </a>
+            <h3 class="item-name mb4">iPhone 13 128GB | Chính hãng VN/A</h3>
+            <div class="item-price mb4">
+                <span>11.790.000đ</span>
+                <span>17.290.000đ</span>
+
+            </div>
+            <div class="item-cmt">
+                <span>72 đánh giá</span>
+                <div class="star-display">
+                    ★★★★★
+                  </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Thông tin liên hệ</h4>
+                <p>Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</p>
+                <p>Hotline: 1900 9999</p>
+                <p>Email: hotro@abcshop.vn</p> <br>
+                <h4>Phương thức thanh toán</h4>
+                <a href="#"><img src="https://cdn2.cellphones.com.vn/x35,webp/media/wysiwyg/apple-pay-og.png" alt=""></a>
+                <a href="#"><img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/vnpay-logo.png" alt=""></a>
+                <a href="#"><img src="https://cdn2.cellphones.com.vn/x/media/wysiwyg/momo_1.png" alt="MoMo" alt=""></a>
+                <a href="#"><img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/onepay-logo.png" alt=""></a>
+                <a href="#"><img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/mpos-logo.png" alt=""></a> 
+                <a href="#"><img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/kredivo-logo.png" alt=""></a>
+                <a href="#"><img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/zalopay-logo.png" alt=""></a>
+                <a href="#"><img src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/alepay-logo.png" alt=""></a>
+                <a href="#"><img src="https://cdn2.cellphones.com.vn/x/media/wysiwyg/fundiin.png" alt=""></a>
+                
+            </div>
+            <div class="footer-col">
+                <h4>Thông tin và chính sách</h4>
+                
+                <ul>
+                    <li><a href="#">Mua hàng và thanh toán Online</a></li>
+                    <li><a href="#">Mua hàng trả góp Online</a></li>
+                    <li><a href="#">Mua hàng trả góp bằng thẻ tín dụng</a></li>
+                    <li><a href="#">Trung tâm bảo hành chính hãng</a></li>
+                    <li><a href="#">Xem ưu đãi Smember</a></li>
+                    <li><a href="#">Tra thông tin bảo hành</a></li>
+                    <li><a href="#">Chính sách giao hàng</a></li>
+                    <li><a href="#">Quy định về việc sao lưu dữ liệu </a></li>
+                    <li><a href="#">Chính sách khui hộp sản phẩm Apple</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-col">
+                <h4>Hỗ trợ khách hàng</h4>
+                
+                <ul>
+                    <li><a href="#">Câu hỏi thường gặp (FAQ)</a></li>
+                    <li><a href="#">Hướng dẫn mua hàng Online</a></li>
+                    <li><a href="#">Hướng dẫn thanh toán qua thẻ</a></li>
+                    <li><a href="#">Tra cứu tình trạng đơn hàng</a></li>
+                    <li><a href="#">Chính sách bảo hành & đổi trả</a></li>
+                    <li><a href="#">Hỗ trợ kỹ thuật sản phẩm</a></li>
+                    <li><a href="#">Gửi yêu cầu hỗ trợ</a></li>
+                    <li><a href="#">Thông tin liên hệ trực tiếp</a></li>
+            </div>
+            <div class="footer-col">
+                <h4>Dịch vụ nổi bật</h4>
+                
+                <ul>
+                    <li><a href="#">Thu cũ đổi mới - trợ giá cao</a></li>
+                    <li><a href="#">Giao hàng 2H nội thành</a></li>
+                    <li><a href="#">Lắp đặt và hướng dẫn tận nơi</a></li>
+                    <li><a href="#">Tư vấn chọn sản phẩm qua Zalo</a></li>
+                    <li><a href="#">Gói bảo hành mở rộng</a></li>
+                    <li><a href="#">Ưu đãi sinh viên, doanh nghiệp</a></li>
+                    <li><a href="#">Giảm giá khi mua combo</a></li>
+                    <li><a href="#">Trả góp qua ví điện tử</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Phản hồi</h4>
+                <div class="cmt">
+                    <input type="text" placeholder="Nhập phản hồi của bạn vào đây...">
+                    <button>
+                        <img src="img/gui.png" width="20px">
+                        Gửi
+                    </button>
+                </div> <br>
+                <h4>Theo dõi chúng tôi</h4>
+               
+                <div class="social-icons">
+                    <a href="#"><img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-youtube.png" alt=""></a>
+                    <a href="#"><img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-zalo.png" alt=""></a>
+                    <a href="#"><img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-tiktok.png" alt=""></a>
+                    <a href="#"><img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-instagram.png" alt=""></a>
+                    <a href="#"><img src="https://cdn2.cellphones.com.vn/44x,webp/media/logo/social/cellphones-facebook.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ABC Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+</div>
+    <script>
+        const buttons = document.querySelectorAll('.item-v3-1');
+    
+        buttons.forEach(button => {
+          button.addEventListener('click', () => {
+        
+            buttons.forEach(btn => btn.classList.remove('active'));
+      
+    
+            button.classList.add('active');
+          });
+        });
+      </script>
+      <script>
+        // Nhóm dung lượng
+        const capacityButtons = document.querySelectorAll('.item-v1');
+        capacityButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            capacityButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+          });
+        });
+      
+        // Nhóm màu sắc
+        const colorButtons = document.querySelectorAll('.item-v2-1');
+        colorButtons.forEach(button => {
+          button.addEventListener('click', () => {
+            colorButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+          });
+        });
+      </script>
+      
+</body>
+</html>

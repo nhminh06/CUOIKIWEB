@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main-lg{
+    display: flex;
+    justify-content: center;
+    margin-top: 111px;
+}
+.main-lg-1{
+text-align: center;
+    height: 700px;
+    width: 700px;
+    padding-top: 65px;
+    margin: 0 auto;
+}
+
+
+.lg-logo img{
+    height: 160px;
+    padding-bottom: 10px;
+}
+.lg-methor{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 10px;
+}
+.lg-methor-1{
+    display: flex;
+    align-items: center;
+padding: 5px;
+}
+.lg-methor-1 p{
+    font-size: 15px;
+    padding-left: 3px;
+    color: rgb(135, 130, 130);
+}
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.hr{
+    width: 140px;
+    align-items: center;
+    margin: 15px;
+}
+.lg{
+    margin-top: 30px;
+}
+.lg input{
+    font-size:15px ;
+    height: 40px;
+    width: 600px;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    padding-left: 5px;
+}
+input:focus{
+    border-bottom:2px solid rgb(51, 131, 152) ; 
+    font-size: 16px;
+}
+.er-lg{
+    display: flex;
+    justify-content: flex-end;
+    width: 640px;
+    margin-top: -14px;
+}
+.click-lg{
+    margin-top: 30px;
+    width: 600px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: rgb(62, 163, 191);
+}
+.next-su{
+    margin-top: 15px;
+    font-size: 13px;
+    color: rgb(135, 130, 130);
+}
+.next-su a{
+    text-decoration: none;
+    color: rgb(62, 163, 191);
+}
+.next-su1{
+    margin-top: 15px;
+    font-size: 13px;
+    color: rgb(135, 130, 130);
+}
+.next-su1 a{
+    color: rgb(62, 163, 191);}
