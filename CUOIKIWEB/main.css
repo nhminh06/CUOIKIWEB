@@ -664,6 +664,42 @@ h1{
           margin-right: 14px;
 }
 }
+ .swiper {
+      width: 1260px;
+      padding: 10px;
+      margin: auto;
+    }
+
+    .swiper-slide {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 10px;
+      width: 200px !important;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .product-price {
+      color: red;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #0077aa;
+    }
+  
 
 
     
