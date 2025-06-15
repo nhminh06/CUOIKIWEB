@@ -183,4 +183,14 @@ body {
     font-size: 12px;  
     margin-left: 6px;  
     cursor: help;  
-  }  
+  } 
+  @media (max-width:430px) {
+    .main-su{
+      margin-top: 70px;
+    }
+    header{
+      display: none !important;
+    }
+    
+  } 
+  
